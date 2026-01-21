@@ -1,0 +1,81 @@
+.to-do-list{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  box-sizing: border-box;
+  background: linear-gradient(180deg,#051025 0%, #071424 100%);
+}
+
+.to-do-card{
+  width: 100%;
+  max-width: 720px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  border-radius: 12px;
+  padding: 26px;
+  box-shadow: 0 18px 40px rgba(2,6,23,0.6);
+  color: #e6eef8;
+}
+
+.to-do-card h1{
+  margin: 0 0 18px 0;
+  font-size: 1.6rem;
+  color: #fff;
+  letter-spacing: 0.8px;
+}
+
+.to-do-form{
+  display:flex;
+  gap:12px;
+  margin-bottom:18px;
+}
+
+.to-do-form input{
+  flex:1;
+  padding:12px 14px;
+  border-radius:8px;
+  border:1px solid rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.02);
+  color: #e6eef8;
+  outline:none;
+}
+
+.to-do-form input:focus{ box-shadow: 0 0 0 4px rgba(96,165,250,0.06); border-color: rgba(96,165,250,0.45);} 
+
+.add-button{
+  background: linear-gradient(90deg,#60a5fa,#3b82f6);
+  color:#031025;
+  border:none;
+  padding:10px 18px;
+  border-radius:8px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.add-button:hover{ transform: translateY(-3px);} 
+
+.task-list{ list-style: none; padding:0; margin:0; display:flex; flex-direction:column; gap:10px; }
+
+.task-item{
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  padding:12px 14px; border-radius:10px; background: rgba(255,255,255,0.02);
+  border-left: 4px solid rgba(96,165,250,0.14);
+}
+
+.task-item .text{ color:#e6eef8; font-weight:600; }
+
+.task-actions{ display:flex; gap:8px; align-items:center; }
+
+.task-actions button{
+  background:transparent; border:1px solid rgba(255,255,255,0.06); color:#e6eef8; padding:8px 10px; border-radius:8px; cursor:pointer; font-weight:700;
+}
+
+.task-actions button:hover{ background: rgba(255,255,255,0.03); transform: translateY(-2px);} 
+
+@media (max-width:640px){
+  .to-do-card{ padding:18px; }
+  .to-do-form input{ padding:10px; }
+  .to-do-card h1{ font-size:1.2rem; }
+  .task-actions button{ padding:7px 8px; }
+} 
