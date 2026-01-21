@@ -7,6 +7,16 @@ This project is ideal for beginners who want to understand **React Hooks**, **st
 
 ---
 
+## 🌐 Live Demo (Deployed Link)
+
+👉 **Live Application:**  
+🔗 https://todo-app-ecru-ten-31.vercel.app/
+
+> _(Example: Vercel / Netlify deployment link)_  
+> Replace this link with your actual deployed project URL.
+
+---
+
 ## 📌 Project Overview
 
 The React To-Do List App helps users:
@@ -36,8 +46,10 @@ The React To-Do List App helps users:
 - **JavaScript (ES6+)**
 - **CSS**
 - **Vite** (for fast React setup)
+- **Vercel / Netlify** (for deployment)
 
 ---
+
 
 ## 📂 Folder Structure
 src/
