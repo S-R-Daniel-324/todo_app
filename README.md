@@ -1,16 +1,116 @@
-# React + Vite
+# 📝 React To-Do List Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully functional and beginner-friendly **To-Do List Application** built using **React.js**.  
+This project allows users to manage daily tasks efficiently by adding, deleting, and reordering tasks.
 
-Currently, two official plugins are available:
+This project is ideal for beginners who want to understand **React Hooks**, **state management**, and **event handling** in a real-world example.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📌 Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The React To-Do List App helps users:
 
-## Expanding the ESLint configuration
+- Organize daily tasks
+- Maintain task priority using move up/down
+- Practice React fundamentals with clean code
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Features
+
+- ➕ Add new tasks
+- 🗑️ Delete existing tasks
+- ⬆️ Move tasks up in the list
+- ⬇️ Move tasks down in the list
+- ⛔ Prevents adding empty tasks
+- ⚛️ Uses React Functional Components
+- 🧠 Uses React Hooks (`useState`)
+- 🧼 Clean, readable, and maintainable code
+
+---
+
+## 🛠️ Technologies Used
+
+- **React.js**
+- **JavaScript (ES6+)**
+- **CSS**
+- **Vite** (for fast React setup)
+
+---
+
+## 📂 Folder Structure
+src/
+│
+├── ToDoList.jsx # Main To-Do List component
+├── App.jsx # Root component
+├── index.css # Styling
+├── main.jsx # Entry point
+
+
+---
+
+## ⚙️ Core Concepts Used
+
+### 🔹 React Hooks
+
+- `useState` → Used to manage tasks and input state
+
+js
+const [tasks, setTasks] = useState([]);
+const [newTask, setNewTask] = useState("");
+🧠 Application Logic Explained
+➕ Add Task
+
+Takes input from the user
+
+Uses trim() to prevent empty tasks
+
+Adds the task to the existing list using spread operator
+
+🗑️ Delete Task
+
+Deletes a task using its index
+
+Uses filter() to keep the state immutable
+
+
+const updatedTasks = tasks.filter((_, i) => i !== index);
+
+
+
+⬆️ Move Task Up
+
+Checks if the task is not already at the top
+
+Swaps the task with the previous one using array destructuring
+
+⬇️ Move Task Down
+
+Checks if the task is not already at the bottom
+
+Swaps the task with the next one safely
+
+🖱️ Event Handling
+
+onChange → Updates input field
+
+onClick → Handles add, delete, move up, move down actions
+
+
+1️⃣ Clone the Repository
+
+
+git clone https://github.com/S-R-Daniel-324/todo_app
+
+2️⃣ Go to Project Directory
+
+cd my-react-app
+
+3️⃣ Install Dependencies
+
+npm install
+
+4️⃣ Start Development Server
+
+npm run dev
